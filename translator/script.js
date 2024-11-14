@@ -54,7 +54,7 @@ function updateFavorites() {
 
 // Удаление перевода из избранного
 function removeFavorite(index) {
-    // Удалите элемент из favorites
+    favorites.splice(index, 1);
     updateFavorites();
     alert("Перевод удален из избранного.");
 }
